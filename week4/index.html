@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Portfolio</title>
+  <meta name="author" content="Zachary Taylor">
+  <link rel="icon" href="http://spyrestudios.com/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Paprika">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+</head>
+<style>
+  body {
+    background-image: url("https://assets.wallpapersin4k.org/uploads/2017/04/Light-Colour-Background-Wallpapers-5.jpg");
+  }
+</style>
+<body>
+  <div id="w">
+    <h1>Portfolio</h1>
+    <p>Here you will find some infromation regarding what I have learned so far through the IT program at PPU. I fortunately do not have many projects to showcase, so I will explain what I have learned so far and how I am applying it in the real world.</p>
+
+    <h2>Programming Languages</h2>
+    <br>
+    <div class="q">
+      <h3 class="qhead"><a href="#q01">JavaScript</a></h3>
+      <div class="answer" id="q01"><p></p><img src="screenshot.png" alt="JavaScript-Screenshot"></div>
+    </div>
+
+    <div class="q">
+      <h3 class="qhead"><a href="#q02">HTML</a></h3>
+      <div class="answer" id="q02"><p><img src="html.png" alt="HTML-Screenshot"></p></div>
+    </div>
+
+    <div class="q">
+      <h3 class="qhead"><a href="#q03">jQuery</a></h3>
+      <div class="answer" id="q03"><p><img src="jquery.png" alt="jQuery-Screenshot"></p></div>
+    </div>
+
+    <div class="q">
+      <h3 class="qhead"><a href="#q04">Handlebars</a></h3>
+      <div class="answer" id="q04"><p>Handlebars are used to make a page dynamic, which means that administrators can alter the page and the modified content is updated in the database. <br> <img src="handlebars.png" alt="Handlebars-Screenshot"></p></div>
+    </div>
+
+        <h2>Projects</h2>
+        <br>
+        <div class="q">
+          <h3 class="qhead"><a href="#q05">Family House Administrative Website</a></h3>
+          <div class="answer" id="q05"><p>For my Senior Project, we are working alongside the Mobile Applications class. Our class is responsible for designing the administrative website where they an alter the FAQ page, view linen requests, and push notifications. We are also intigrating the database and the APIs for the other class to implement into the phone app they are designing.<img src="jquery.png" alt="FAQ-Screenshot"></p></div>
+        </div>
+
+        <div class="q">
+          <h3 class="qhead"><a href="#q06">About Me - Resume</a></h3>
+          <div class="answer" id="q06"><p>I am going back to Ohio over the summer to work for Cedar Point. I was applying for a job and the website was only allowing 100 characters for a text field instead of 100 words so I decided to just make a website to showcase thinking outside the box and problem solving skills.<img src="resume.png" alt="Resume/AboutMe-Screenshot"></p></div>
+        </div>
+
+        <div class="q">
+          <h3 class="qhead"><a href="#q07">Mock Trial</a></h3>
+          <div class="answer" id="q07"><p>I participated in Mock Trial throughout my 4 years of high school as an attorney and witness. Here is a picture of our 2nd place trophy in an international tournament we particapted at in Atlanta (held by my friend, Dane).<img src="mocktrial.png" alt="Trophy-Screenshot"></p></div>
+        </div>
+
+
+  </div><!-- end #w -->
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".qhead a").on("click", function(e){
+    e.preventDefault();
+    var href = $(this).attr("href");
+
+    $(href).fadeToggle(450);
+  });
+});
+
+
+</script>
+</body>
+</html>
