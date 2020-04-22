@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title>Typed.js</title>
+    <style>
+      body
+      {
+        margin: 0;
+        padding: 0;
+        background-color: #e82a54
+      }
+      h1
+      {
+        position: absolute;
+        top: 50%
+        transform: translateY(-50%);
+        width:100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        color: #fff;
+        font-size: 40px;
+        text-shadow: 0 2px 5px rgba(0,0,0,.5);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="type"></h1>
+    <script type="text/javascript" src="typed.js"></script>
+    <script type="text/javascript">
+      var typed = new Typed(".type", {
+        strings: [
+          //"Test string number 1",
+          //"Test string number 2",
+          //"Test string number 3",
+          //"Hi",
+          //"Bye",
+        "Hello Classmates",
+        "This is my attempt at using typed.js, a library that makes it easier to animate text",
+        "I didn't put too much work into the website, but instead focused on learning the library",
+        ],
+        //  shuffle: true,
+        //  typespeed: 40,
+          typeSpeed: 50,
+          backSpeed: 35,
+          loop: true,
+          smartBackspace: true // Default value
+      });
+    </script>
+  </body>
+</html>
